@@ -24,3 +24,7 @@ int main() {
     return 0;
 }
 
+/*************************************************************************/
+//21-Enero-2026 GabrielaQuintanar Setup de OpenCV en Visual Studio
+//27-Enero-2026 GabrielaQuintanar Creación de repositorio en Github
+/************************************************************************/
