@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="OpencvTest/OpencvTest.vcxproj" Id="6e262a8a-40b3-46a6-ba8c-4d4f7e132d44" />
+</Solution>
