@@ -1,107 +1,62 @@
 #include <iostream>
+#include "Analizador.h"
+
 using namespace std;
 
-#include "search.h"
-#include "sort.h"
-#include "view.h"
+int main() {
+    AnalizadorAlgoritmos miAnalizador; // Instancia POO
+    int opcionPrincipal, n, m, formato, tipoDato, metodo, valor;
+    double tiempo;
 
-int main()
-{
-    int opcion;
-    int metodo;
-    int arreglo[10] = { 33, 5, 90, 12, 41, 8, 77, 20, 50, 62 };
-    int n = 10;
-    int posicion;
-    int valor;
-    int comparaciones = 0;
-    int intercambios = 0;
+    do {
+        cout << "\n=== MENU ===" << endl;
+        cout << "1. Busqueda Secuencial" << endl;
+        cout << "2. Busqueda Binaria (ordena automaticamente)" << endl;
+        cout << "3. Ordenar Arreglo" << endl;
+        cout << "4. Salir" << endl;
+        cout << "Seleccione opcion: ";
+        cin >> opcionPrincipal;
 
-    do
-    {
-        mostrarMenu();
-        cin >> opcion;
+        if (opcionPrincipal == 4) break;
 
-        switch (opcion)
-        {
-            case 1:
-                mostrarArreglo(arreglo, n);
-                valor = pedirValor();
-                posicion = busquedaSecuencial(arreglo, n, valor);
+        // --- Interfaz Original de Dimensiones ---
+        if (opcionPrincipal == 3 || opcionPrincipal == 1 || opcionPrincipal == 2) {
+            cout << "\nSeleccione formato:\n1. Lineal (N)\n2. Cuadratico (N*N)\n3. Rectangular (N*M)\nSeleccion: ";
+            cin >> formato;
 
-                if (posicion != -1)
-                {
-                    cout << "Valor encontrado en posicion: " << posicion << endl;
-                }
-                else
-                {
-                    cout << "Valor no encontrado.\n";
-                }
-                break;
+            cout << "Ingrese el valor de N: ";
+            cin >> n;
+            m = 0;
+            if (formato == 3) {
+                cout << "Ingrese el valor de M: ";
+                cin >> m;
+            }
 
-            case 2:
-                cout << "\nOrdenando arreglo...\n";
-                ordenarBurbuja(arreglo, n);
-                mostrarArreglo(arreglo, n);
+            cout << "1. Repetidos\n2. Unicos\nSeleccion: ";
+            cin >> tipoDato;
 
-                valor = pedirValor();
-                posicion = busquedaBinaria(arreglo, n, valor);
+            // El objeto se encarga de la generacion y los mensajes [PROCESO]
+            miAnalizador.generarNuevosDatos(n, formato, m, (tipoDato == 1));
 
-                if (posicion != -1)
-                {
-                    cout << "Valor encontrado en posicion: " << posicion << endl;
-                }
-                else
-                {
-                    cout << "Valor no encontrado.\n";
-                }   
-                break;
+            if (opcionPrincipal == 1 || opcionPrincipal == 2) {
+                cout << "Ingrese el valor a buscar: ";
+                cin >> valor;
+                int pos = miAnalizador.medirBusqueda(opcionPrincipal, valor, tiempo);
+                cout << (pos != -1 ? "\n[INFO] Valor encontrado en la posicion: " : "\n[INFO] Valor no encontrado. ") << pos << endl;
+                cout << ">>> TIEMPO: " << tiempo << " ms <<<" << endl;
+            }
+            else if (opcionPrincipal == 3) {
+                cout << "\n=== METODOS DE ORDENAMIENTO ===" << endl;
+                cout << "1. Burbuja\n2. Seleccion\n3. Insercion\n4. QuickSort\n5. MergeSort" << endl;
+                cout << "Seleccione metodo: ";
+                cin >> metodo;
 
-            case 3:
-
-                metodo = mostrarMenuOrdenamiento();
-                
-                
-                if (metodo == 1)
-                {
-                    ordenarBurbuja(arreglo, n);
-                }
-                else if (metodo == 2)
-                {
-                    ordenarSeleccion(arreglo, n);
-                }
-                else if (metodo == 3)
-                {
-                    ordenarInsercion(arreglo, n);
-                }
-                else if (metodo == 4)
-                {
-                    quickSort(arreglo, 0, n - 1, comparaciones, intercambios);
-                    cout << "Comparaciones: " << comparaciones << endl;
-                    cout << "Intercambios: " << intercambios << endl;
-                }
-                else if (metodo == 5)
-                {
-                    mergeSort(arreglo, 0, n - 1, comparaciones);
-                    cout << "Comparaciones: " << comparaciones << endl;
-                }
-                else
-                {
-                    cout << "Metodo invalido.\n";
-                }
-
-                cout << "\nArreglo ordenado:\n";
-                mostrarArreglo(arreglo, n);
-                break;
-
-            case 4:
-                cout << "Saliendo...\n";
-                break;
-
-            default:
-                cout << "Opcion invalida.\n";
+                tiempo = miAnalizador.medirOrdenamiento(metodo);
+                cout << ">>> TIEMPO: " << tiempo << " ms <<<" << endl;
+            }
         }
 
-    } while (opcion != 4);
+    } while (opcionPrincipal != 4);
 
     return 0;
 }
