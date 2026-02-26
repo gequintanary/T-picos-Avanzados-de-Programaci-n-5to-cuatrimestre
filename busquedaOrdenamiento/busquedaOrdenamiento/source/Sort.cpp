@@ -1,4 +1,5 @@
-#include "sort.h"
+// source/Sort.cpp
+#include "../include/sort.h" 
 
 void ordenarBurbuja(int arreglo[], int n) {
     int i, j, temp;

@@ -13,36 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{0c64ab4f-5fba-4a0b-8b80-dc87e5e28e66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{7fe25121-a0fd-444d-b8d0-6711264893b8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="busquedaOrdenamiento.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="search.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="source\Analizador.cpp">
+      <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="view.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="source\search.cpp">
+      <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="Sort.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="source\Sort.cpp">
+      <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="Analizador.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="source\view.cpp">
+      <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="search.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\Analizador.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="view.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\search.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="sort.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\sort.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Analizador.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\view.h">
+      <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

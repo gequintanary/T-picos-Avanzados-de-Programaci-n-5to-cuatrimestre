@@ -123,17 +123,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Analizador.cpp" />
-    <ClCompile Include="Sort.cpp" />
     <ClCompile Include="busquedaOrdenamiento.cpp" />
-    <ClCompile Include="search.cpp" />
-    <ClCompile Include="view.cpp" />
+    <ClCompile Include="source\Analizador.cpp" />
+    <ClCompile Include="source\search.cpp" />
+    <ClCompile Include="source\Sort.cpp" />
+    <ClCompile Include="source\view.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Analizador.h" />
-    <ClInclude Include="search.h" />
-    <ClInclude Include="sort.h" />
-    <ClInclude Include="view.h" />
+    <ClInclude Include="include\Analizador.h" />
+    <ClInclude Include="include\search.h" />
+    <ClInclude Include="include\sort.h" />
+    <ClInclude Include="include\view.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

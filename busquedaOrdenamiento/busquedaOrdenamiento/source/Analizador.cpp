@@ -3,7 +3,7 @@
  * @brief Implementacion de la clase con todos los algoritmos de la practica.
  */
 
-#include "Analizador.h"
+#include "../include/Analizador.h"
 #include <algorithm>
 #include <random>
 #include <iostream>

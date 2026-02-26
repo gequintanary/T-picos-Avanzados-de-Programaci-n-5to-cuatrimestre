@@ -1,4 +1,5 @@
-#include "search.h"
+// source/search.cpp
+#include "../include/search.h"
 
 int busquedaSecuencial(int arreglo[], int n, int valor)
 {
