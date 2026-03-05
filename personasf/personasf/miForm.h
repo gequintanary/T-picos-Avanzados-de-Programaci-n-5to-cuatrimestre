@@ -96,7 +96,7 @@ namespace personasf {
 			// etiquetaNombre
 			// 
 			this->etiquetaNombre->AutoSize = true;
-			this->etiquetaNombre->BackColor = System::Drawing::SystemColors::ControlLight;
+			this->etiquetaNombre->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->etiquetaNombre->Location = System::Drawing::Point(12, 22);
 			this->etiquetaNombre->Name = L"etiquetaNombre";
 			this->etiquetaNombre->Size = System::Drawing::Size(71, 16);
@@ -107,7 +107,7 @@ namespace personasf {
 			// etiquetaAPaterno
 			// 
 			this->etiquetaAPaterno->AutoSize = true;
-			this->etiquetaAPaterno->BackColor = System::Drawing::SystemColors::ControlLight;
+			this->etiquetaAPaterno->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->etiquetaAPaterno->Location = System::Drawing::Point(12, 48);
 			this->etiquetaAPaterno->Name = L"etiquetaAPaterno";
 			this->etiquetaAPaterno->Size = System::Drawing::Size(107, 16);
@@ -118,7 +118,7 @@ namespace personasf {
 			// etiquetaAMaterno
 			// 
 			this->etiquetaAMaterno->AutoSize = true;
-			this->etiquetaAMaterno->BackColor = System::Drawing::SystemColors::ControlLight;
+			this->etiquetaAMaterno->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->etiquetaAMaterno->Location = System::Drawing::Point(12, 75);
 			this->etiquetaAMaterno->Name = L"etiquetaAMaterno";
 			this->etiquetaAMaterno->Size = System::Drawing::Size(109, 16);
@@ -128,7 +128,7 @@ namespace personasf {
 			// etiquetaFechaN
 			// 
 			this->etiquetaFechaN->AutoSize = true;
-			this->etiquetaFechaN->BackColor = System::Drawing::SystemColors::ControlLight;
+			this->etiquetaFechaN->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->etiquetaFechaN->Location = System::Drawing::Point(12, 101);
 			this->etiquetaFechaN->Name = L"etiquetaFechaN";
 			this->etiquetaFechaN->Size = System::Drawing::Size(132, 16);
@@ -138,7 +138,7 @@ namespace personasf {
 			// etiquetaCURP
 			// 
 			this->etiquetaCURP->AutoSize = true;
-			this->etiquetaCURP->BackColor = System::Drawing::SystemColors::ControlLight;
+			this->etiquetaCURP->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->etiquetaCURP->Location = System::Drawing::Point(12, 128);
 			this->etiquetaCURP->Name = L"etiquetaCURP";
 			this->etiquetaCURP->Size = System::Drawing::Size(45, 16);
@@ -148,7 +148,7 @@ namespace personasf {
 			// etiquetaDomicilio
 			// 
 			this->etiquetaDomicilio->AutoSize = true;
-			this->etiquetaDomicilio->BackColor = System::Drawing::SystemColors::ControlLight;
+			this->etiquetaDomicilio->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->etiquetaDomicilio->Location = System::Drawing::Point(12, 154);
 			this->etiquetaDomicilio->Name = L"etiquetaDomicilio";
 			this->etiquetaDomicilio->Size = System::Drawing::Size(63, 16);
@@ -200,7 +200,7 @@ namespace personasf {
 			// 
 			// botonGuardarD
 			// 
-			this->botonGuardarD->Location = System::Drawing::Point(125, 293);
+			this->botonGuardarD->Location = System::Drawing::Point(256, 314);
 			this->botonGuardarD->Name = L"botonGuardarD";
 			this->botonGuardarD->Size = System::Drawing::Size(120, 23);
 			this->botonGuardarD->TabIndex = 12;
@@ -212,6 +212,7 @@ namespace personasf {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::ControlLight;
 			this->ClientSize = System::Drawing::Size(388, 349);
 			this->Controls->Add(this->botonGuardarD);
 			this->Controls->Add(this->textoDomicilio);
@@ -227,7 +228,7 @@ namespace personasf {
 			this->Controls->Add(this->etiquetaAPaterno);
 			this->Controls->Add(this->etiquetaNombre);
 			this->Name = L"miForm";
-			this->Text = L"miForm";
+			this->Text = L"Registro de datos";
 			this->Load += gcnew System::EventHandler(this, &miForm::miForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
