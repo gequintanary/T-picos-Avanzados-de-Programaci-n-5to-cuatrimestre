@@ -1,0 +1,36 @@
+----- NUEVO REGISTRO -----
+Nombre(s): Gabriela Estefania
+Apellido Paterno: Quintanar
+Apellido Materno: Yañez
+Fecha de nacimiento: 27/01/2006
+CURP: QUYG060127MQTNXBA6
+Domicilio: Cerro del Aire 89, Colinas del Cimatario, C,P 76090, Querétaro Qro
+--------------------------
+
+----- NUEVO REGISTRO -----
+Nombre(s): Frida Camila
+Apellido Paterno: Quintanar
+Apellido Materno: Yañez
+Fecha de nacimiento: 27/12/2010
+CURP: QUYF101227MQTNXRA1
+Domicilio: Cerro del Aire 89, Colinas del Cimatario, C,P 76090, Queretaro, Qro
+--------------------------
+
+----- NUEVO REGISTRO -----
+Nombre(s): Alejandro
+Apellido Paterno: Mendoza
+Apellido Materno: Ruiz
+Fecha de nacimiento: 23/04/1985
+CURP: MERA850423HDFRXX02
+Domicilio: Av. Insurgentes Sur 456, Col. Roma Norte, C.P. 06700, Ciudad de México
+--------------------------
+
+----- NUEVO REGISTRO -----
+Nombre(s): Fernanda Elizabeth
+Apellido Paterno: Castillo
+Apellido Materno: Vargas
+Fecha de nacimiento: 12/11/1992
+CURP: CAVE921112MQTSRX09
+Domicilio: Calle de la República 105, Colonia Centro, C.P. 76000, Santiago de Querétaro, Qro
+--------------------------
+
